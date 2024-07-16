@@ -1,0 +1,539 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    overflow: hidden;
+    background-color: black;
+}
+
+.main{
+    display: flex;
+    height: 100vh;
+    padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.sidebar{
+    background-color: black;
+    width: 420px;
+    border-radius: 16px;
+    margin-right: 0.5rem;
+
+}
+
+.main-content{
+    background-color: #121212;
+    flex: 1;
+    border-radius: 1rem; /*16px*/
+    overflow: auto;
+    padding: 0 1.5rem;
+}
+
+.music-player{
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    height: 72px;
+    width: 100%;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.nav{
+    background-color: #121212;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    padding: 0.5rem 0.75rem;
+}
+
+.nav-option{
+    line-height: 40px;
+    padding: 0.5rem 0.75rem;
+
+}
+
+.nav-option i{
+    font-size: 1.25rem;
+    cursor: pointer;
+
+}
+
+
+
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+
+.nav-option #search{
+    opacity: 0.7;
+    position: relative;
+    bottom: 3px;
+}
+
+.nav-option #search:hover{
+    opacity: 1;
+}
+
+.library{
+    background-color: #121212;
+    height: 100%;
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.7rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lib-option img{
+    width: 1.25rem;
+    height: 1.25rem;
+    opacity: 0.7;
+}
+
+.lib-option a{
+    opacity: 0.7;
+}
+
+.lib-option a:hover{
+    opacity: 1;
+}
+
+.lib-option img:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.icons{
+    font-size: 1.2rem;
+    display: flex;
+}
+
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.6;
+}
+
+.icons i:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.box{
+    height: 8rem;
+    background-color: #232323;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0 1.25rem 0;
+    padding: 0.5rem 1rem;
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.box-p2{
+    font-size: 0.85rem;
+    opacity: 0.9;
+    margin: 0.75rem 0;
+}
+
+.badge{
+    border: none;
+    background-color: white;
+    padding: 0.25rem 1rem;
+    border-radius: 100px;
+    color: black;
+    font-weight: 660;
+    height: 2rem;
+    margin-top: 0.5rem;
+    /* width: fit-content; */
+}
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    z-index: 2;
+}
+
+.sticky-nav-arrow{
+    margin-left: 0.8rem;
+}
+
+.sticky-nav-arrow img{
+    opacity: 0.7;
+}
+
+.sticky-nav-arrow img:hover{
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.02);
+}
+.sticky-nav-option{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav-item{
+    margin-right: 1rem;
+}
+
+.badge:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+
+.nav-item:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.2s linear;
+}
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+
+.dark-badge i{
+    margin-right: 5px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card{
+    background-color: #151515;
+    width: 145px;
+    /* height: 230px; */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+
+.card:hover{
+    background-color: #232323;
+    transition: all 0.5s linear;
+    cursor: pointer;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.card-title{
+    font-weight: 600;
+}
+
+.card-info{
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+
+
+.footer{
+    height: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.line{
+    width: 90%;
+    height: 25%;
+    border-top: 0.1px solid white;
+    opacity: 0.1;
+}
+
+.music-player{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-player .album{
+    width: 25%;
+    /* background-color: pink; */
+}
+
+.sub-album{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+
+.sub-album img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3px;
+    margin-right: 1rem;
+
+}
+.text{
+    padding: 5rem 0;
+    margin-right: 1.25rem;
+}
+.t1{
+    font-size: 0.9rem;
+    font-weight: 600;
+    opacity: 0.9;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.t1:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.t2{
+    font-size: 0.6rem;
+    position: relative;
+    bottom: 10px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.t2:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.sub-album i{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sub-album i:hover{
+    opacity: 1;
+    transform: scale(1.02);
+}
+
+.player{
+    width: 50%;
+    /* background-color: orange; */
+}
+
+.control{
+    width: 25%;
+    /* background-color: green; */
+}
+
+.sub-control{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding-left: 6rem;
+}
+
+.sub-control i{
+    margin-right: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.sub-control i:hover{
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+.last{
+    margin-left: 5px;
+}
+
+.volume-bar{
+    width: 20%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+    right: 15px;
+}
+
+.volume-bar::-webkit-slider-runnable-track{
+    border-radius: 100px;
+    height: 0.2rem;
+    background-color: #ddd;
+}
+
+
+.volume-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 0.6rem;
+    width: 0.6rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+.player-icon{
+    height: 1rem;
+    margin-right: 1.75rem;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.player-icon:hover{
+    opacity: 1;
+}
+
+.play-icon{
+    height: 2rem;
+    opacity: 1;
+}
+
+.player-control{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.play-bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar{
+    width: 70%;
+    appearance: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-runnable-track{
+    border-radius: 100px;
+    height: 0.2rem;
+    background-color: #ddd;
+}
+
+
+.progress-bar::-webkit-slider-thumb{
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-color: #1bd760;
+    border-radius: 50%;
+    margin-top: -6px;
+}
+
+.round-img{
+    border-radius: 50%;
+}
+
+.comapny-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+
+.information{
+    display: flex;
+    width: 70%;
+}
+
+.info-list{
+    list-style: none;
+    font-size: 0.85rem; 
+    font-weight: 500;
+}
+
+.info-list li{
+    position: relative;
+    right: 2.3rem;
+    margin: 10px 0;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.info-list li:hover{
+    opacity: 0.8;
+    text-decoration: underline;
+
+}
+
+.comapny{
+    margin-right: 3rem;
+}
+
+.community{
+    margin-right: 5rem
+}
+
+.social{
+    width: 30%;
+    /* background-color: orange; */
+    display: flex;
+    justify-content: end;
+}
+
+.round-social{
+    display: flex;
+    margin-left: 15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #232323;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-social:hover{
+    background-color: #4a4a4a;
+}
+
+.footer-info{
+    display: flex;
+    padding-left: 3.5rem;
+    height: 200px;
+    /* justify-content: space-between; */
+}
+
+.fot-in{
+    display: flex;
+    width: 80%;
+}
+
+.fot-in p{
+    margin-right: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+
+.fot-in p:hover{
+    opacity: 0.8;
+}
+
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
